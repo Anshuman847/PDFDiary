@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import MergePDF from './components/MergePDF'; // 👈 import your PDF tool
 
 function App() {
   return (
@@ -18,6 +19,12 @@ function App() {
           Learn React
         </a>
       </header>
+
+      {/* 👇 PDF Tool Section */}
+      <section style={{ marginTop: "2rem", textAlign: "center" }}>
+        <h2>📘 PDFDiary Tools</h2>
+        <MergePDF />
+      </section>
     </div>
   );
 }
